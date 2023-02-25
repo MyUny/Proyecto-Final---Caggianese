@@ -1,15 +1,4 @@
-# Tercera pre-entrega Caggianese
+# Proyecto Final
+## Germán Caggianese
 
-## Orden de Pruebas
-
-### En la dirección */AppCoder/inicio* encontraremos nuestra pagina de **inicio** 
-#### En la misma podremos acceder mediante links en la parte superior a
-#### las paginas donde podremos crear **cursos**, **profesores**, 
-#### **estudiantes** y **entregas**. Ademas aquí tambien podremos *buscar por camada*.
-
-## Diferentes *urls* validas:
-#### */AppCoder/profesor* -> Creación de profesores
-#### */AppCoder/cursoFormulario* -> Creación de cursos
-#### */AppCoder/busquedaCamada* y */AppCoder/buscar* -> busqueda de camada
-#### */AppCoder/entregableFormulario* -> Creación de entregables
-#### */AppCoder/estudianteFormulario* -> Creación de estudiantes
+Mi blog te permite registrarte y modificar tus datos de usuario. Solo verás ciertas funciones si eres usuario, como agregar un avatar y enviar tus ideas al creador. También puedes buscar ideas y comentar sobre el blog, y obtener información sobre el desarrollador.
