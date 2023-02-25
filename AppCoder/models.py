@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 class Curso(models.Model):
     curso = models.CharField(max_length=40)
     camada = models.IntegerField()
+    def __str__(self):
+	    return f"{self.curso}"
     
 class Comentario(models.Model):
     comentario = models.CharField(max_length=1200)
