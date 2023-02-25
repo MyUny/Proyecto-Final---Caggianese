@@ -1,0 +1,32 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+
+
+<header class="masthead">
+
+    <div class="container">
+
+        <div class="masthead-subheading">Buscar Ideas por Fecha</div>
+
+    
+
+<!-- Agregar cosas debajo -->
+
+
+<form action= "buscar" method="GET">
+    
+    <input type="number" name="camada" id="camada">
+
+    <input type="submit" value="Buscar">
+
+</form>
+
+
+<!-- Agregar cosas encima -->
+
+</div>
+</header>
+<br>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<header class="masthead">
+
+    <div class="container">
+
+        <div class="masthead-subheading">Comentarios del Blog - Python</div>
+
+    
+
+<!-- Agregar cosas debajo -->
+<h3>Deja tu comentario:</h3>
+<form action="comentarioFormulario" method="POST">
+	{% csrf_token %}
+   <!-- <p><label>Curso:</label> <input type="text" name="curso"></p>
+	<p><label>Camada:</label> <input type="number" name="camada"></p> -->
+	<table>
+
+		{{ miFormulario.as_table }}
+
+	</table>
+
+	<input type="submit" value="Comentar">
+</form>
+
+<p>---</p>
+
+<ul>
+	{% for comentario in object_list %}
+		<li>
+			<h5>Comentario de: {{ comentario.firma }}</h5>
+			<p>{{ comentario.comentario }}</p>
+			<p>
+				<a href="{% url 'Detail' comentario.id %}">Ver</a>
+				<a href="{% url 'Edit' comentario.id %}">Editar</a>
+				<a href="{% url 'Delete' comentario.id %}">Borrar</a>
+			</p>
+		</li>
+	{% endfor %}
+</ul>
+
+</header>
+
+<!-- Agregar cosas encima -->
+
+</div>
+
+<br>
+
+{% endblock %}

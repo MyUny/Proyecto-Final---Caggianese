@@ -1,0 +1,27 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<header class="masthead">
+
+    <div class="container">
+
+        <div class="masthead-subheading">Comentario de: <i>{{ comentario.firma }}</div>        
+        <p><i>{{ comentario.comentario }}</i></p>
+        <p>
+	        <a href="{% url 'List' %}">Regresar</a>
+        </p>
+
+    </header>
+
+<!-- Agregar cosas debajo -->
+
+
+
+<!-- Agregar cosas encima -->
+
+</div>
+
+<br>
+
+{% endblock %}
